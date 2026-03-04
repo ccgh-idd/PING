@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -8,6 +9,8 @@ body {
   color: #1a1a1a;
   background: url('Pics/Background_PING_bw.jpg') center/cover no-repeat fixed;
   background-color: #f5f7fa;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Headings: use a consistent dark purple */
@@ -60,10 +63,13 @@ nav a {
   color: #4B0082;
   border-radius: 25px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 0.9rem;
+  font-size: 1rem;
   position: relative;
   background: transparent;
   border-color: 2px solid #4B0082;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 nav a::before {
@@ -108,7 +114,7 @@ main {
 
 .section h1 {
   color: #4B0082;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -116,7 +122,7 @@ main {
 
 .section h2 {
   color: #4B0082;
-  font-size: 1.6rem;
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -127,6 +133,7 @@ main {
 .section p {
   margin: 0.75rem 0;
   color: #333;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
 footer {
@@ -222,7 +229,7 @@ footer {
 
 .event-content p {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+  font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.5;
   color: #333;
 }
@@ -234,39 +241,79 @@ footer {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
   .events-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   header {
-    padding: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    flex-direction: column;
   }
 
   header img {
-    max-width: 250px;
+    position: static;
+    max-width: 120px;
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 
   nav a {
-    padding: 0.4rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    min-height: 44px;
   }
 
   .section {
-    padding: 1.5rem;
+    padding: 1.25rem;
     margin-bottom: 1rem;
+    border-radius: 8px;
   }
 
   .section h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .section h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .event-date {
+    font-size: 1rem;
+  }
+
+  .event-content p {
+    font-size: 1rem;
   }
 
   main {
-    margin: 1rem auto;
-    padding: 0 1rem;
+    margin: 0.75rem auto;
+    padding: 0 0.75rem;
+  }
+
+  footer {
+    font-size: 0.95rem;
+    padding: 1.25rem 0.75rem;
   }
 }
 
