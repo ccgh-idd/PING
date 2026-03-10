@@ -12,6 +12,7 @@
 
 <body>
   <header>
+    <img src="Pics/Logo_PING_alpha.png" alt="PING logo" class="header-logo">
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -306,6 +307,23 @@
   </footer>
 
   <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        header.classList.add('hide');
+      } else {
+        // Scrolling up
+        header.classList.remove('hide');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
     document.addEventListener('DOMContentLoaded', function () {
       var past = document.getElementById('past-events');
       var btn = document.getElementById('see-more-btn');
