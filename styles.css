@@ -303,6 +303,18 @@ main {
   font-weight: 400;
 }
 
+.section p a {
+  color: #4B0082;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.section p a:hover {
+  color: #7B2CBF;
+}
+
 footer {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
