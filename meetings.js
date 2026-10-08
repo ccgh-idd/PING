@@ -3,6 +3,20 @@
 // date: "4 September 2026" or "March 2026"
 const MEETINGS = [
   {
+    date: "8 January 2027 (tbc)",
+    talks: [
+      { speaker: "Matej Kritznar", title: "Infant pneumococcal transmission dynamics in a high density sampled city" },
+      { speaker: "Brenda", title: "Cocooning?" }
+    ]
+  },
+  {
+    date: "13 November 2026 (tbc)",
+    talks: [
+      { speaker: "Greg Barnsley", title: "How epidemiologically different are IDPs really? Pneumococcal carriage and risk factors in Digaale IDP camp and Hargeisa" },
+      { speaker: "Kevin van Zandvoort", title: "The impact of a MAC campaign on pneumococcal carriage. Preliminary primary and secondary endpoints from a vaccine trial in Digaale IDP camp" }
+    ]
+  },
+  {
     date: "4 September 2026",
     talks: [
       { speaker: "Emmanuel Mendy", title: "Pneumococcal conjugate vaccine booster dose coverage and the impact of an alternative two-dose schedule compared to the standard three-dose schedule in The Gambia, a modelling study" },
