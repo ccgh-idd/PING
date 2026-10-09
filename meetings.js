@@ -10,7 +10,7 @@ const MEETINGS = [
     ]
   },
   {
-    date: "13 November 2026 (tbc)",
+    date: "13 November 2026",
     talks: [
       { speaker: "Greg Barnsley", title: "How epidemiologically different are IDPs really? Pneumococcal carriage and risk factors in Digaale IDP camp and Hargeisa" },
       { speaker: "Kevin van Zandvoort", title: "The impact of a MAC campaign on pneumococcal carriage. Preliminary primary and secondary endpoints from a vaccine trial in Digaale IDP camp" }
