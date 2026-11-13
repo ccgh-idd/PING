@@ -3,10 +3,16 @@
 // date: "4 September 2026" or "March 2026"
 const MEETINGS = [
   {
+    date: "5 March 2027 (tbc)",
+    talks: [
+      { speaker: "Brenda?", title: "Cocooning?" },
+      { speaker: "tbc", title: "tbc" }
+    ]
+  },{
     date: "8 January 2027 (tbc)",
     talks: [
       { speaker: "Matej Kritznar", title: "Infant pneumococcal transmission dynamics in a high density sampled city" },
-      { speaker: "Brenda", title: "Cocooning?" }
+      { speaker: "Ayaka Monoi", title: "climatic and behavirol factors associated with drastic changes in Japanese RSV seasonality in 2025" }
     ]
   },
   {
