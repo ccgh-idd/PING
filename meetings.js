@@ -5,8 +5,8 @@ const MEETINGS = [
   {
     date: "5 March 2027 (tbc)",
     talks: [
-      { speaker: "Brenda?", title: "Cocooning?" },
-      { speaker: "tbc", title: "tbc" }
+      { speaker: "Brenda?", title: "The impact of cocooning to curb neonatal pneumococcal infection" },
+      { speaker: "Shamez(?)", title: "The impact of maternal RSV prevention on invasive pneumococcal disease in the UK" }
     ]
   },{
     date: "8 January 2027 (tbc)",
